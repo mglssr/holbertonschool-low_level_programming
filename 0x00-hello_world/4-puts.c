@@ -1,6 +1,7 @@
 #include <stdio.h>
-int main() {
-	   // printf() displays the string inside quotation
-	      puts('\"Programming is like building a multilingual puzzle");
+
+int main(void) {
+	   //* printf() displays the string inside quotation*/
+	      puts("\"Programming is like building a multilingual puzzle");
 		     return (0);
 }
