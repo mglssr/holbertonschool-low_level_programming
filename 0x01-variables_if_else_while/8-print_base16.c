@@ -8,16 +8,16 @@
 */
 int main(void)
 {
-		char n;
+		char ch;
 
-		for (n = 0; n <= 9 ; n++)
+		for (ch = 0; ch <= 9 ; ch++)
 			{
-		putchar(n);
+		putchar(ch);
 			}
-			for (n = 'a'; n <= 'f'; n++)
+			for (ch = 'a'; ch <= 'f'; ch++)
 			{
-				putchar(n);
-			}
+				putchar(ch);
+			}|
 				printf("\n");
 					return (0);
 }
