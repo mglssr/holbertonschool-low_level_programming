@@ -14,10 +14,8 @@ int main(void)
 		int ch = 97;
 
 			for (; ch <= 122; ch++)
-			{
-				putchar(ch);
-			if (ch != 101 && ch != 113)
-				putchar(ch);
-				}
+				if (ch != 101 && ch != 113)
+					putchar(ch);
+			putchar('\n');
 			return (0);
 }
