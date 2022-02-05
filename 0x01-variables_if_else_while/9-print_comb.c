@@ -7,19 +7,20 @@
 */
 int main(void)
 {
-		int letter;
+		int ch;
 		int a = 9;
-		int xd;
+		int ac;
 
-		for (letter = 0; letter <= a; letter++)
+		for (ch = 0; ch <= a; ch++)
 		{
-				xd = letter + 48;
-		putchar(xd);
-		if (letter < 9)
+				ac = ch + 48;
+		putchar(ac);
+		if (ch < 9)
 		{
 		putchar(',');
 		putchar(' ');
 		}
 		}
-		putchar('\n');	return (0);
+putchar('\n');
+return (0);
 }
