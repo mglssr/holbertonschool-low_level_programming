@@ -11,10 +11,9 @@ int _putchar(char c)
 }
 
 
-void print_alphabet(void)
+void print_alphabet(char c)
     {    
-      char c;
-      putchar('char c');
-      char c ++;
+      putchar('c');
+      c++;
     }
 
