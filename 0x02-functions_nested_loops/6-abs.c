@@ -2,7 +2,7 @@
 #include <inttypes.h>
 /**
 * _abs - hehe
-* ab: abs
+* @ab: abs
 * Return: value ab
 */
 int _abs(int ab)
