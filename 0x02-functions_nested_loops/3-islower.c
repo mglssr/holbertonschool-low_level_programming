@@ -2,6 +2,8 @@
 #include <ctype.h>
 /**
 * _islower - uwu
+*@c : fe
+*Return: 1 if its lowercase, 0 if its uppercase
 */
 int _islower(int c)
 
