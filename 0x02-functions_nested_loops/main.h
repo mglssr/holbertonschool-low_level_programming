@@ -14,7 +14,7 @@ int _putchar(char c)
 void print_alphabet(void)
     {    
       char c;
-      putchar(char c);
+      putchar('char c');
       char c ++;
     }
 
