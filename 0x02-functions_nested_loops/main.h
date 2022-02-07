@@ -13,7 +13,7 @@ int _putchar(char c)
 
 void print_alphabet(void)
     {    
-        putchar(char);
-        char++;
+        putchar(char c);
+        char c ++;
     }
 
