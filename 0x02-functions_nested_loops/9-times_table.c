@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-*
-*
-*
+* times_table -irjied
+* @kawd
+* Return: pqowpe
 */
 void times_table(void)
 {
