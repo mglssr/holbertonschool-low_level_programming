@@ -6,18 +6,23 @@
 */
 void times_table(void)
 {
-	int A, B, res = 0;
+	int A, B, res;
+	A = 0;
+	B = 0;
+	res = 0;
 	for (A = 0; A < 10; A++)
 	{
-		res = B * A;
 		for (B = 0; B < 10; B++)
 		{
+			res = B * A;
 			if (B != 0)
 			{
 				_putchar(' ');
 
 				if (res < 10)
+				{
 					_putchar(' ');
+				}
 			}
 
 			if (res > 9)
@@ -34,7 +39,9 @@ void times_table(void)
 				_putchar('\n');
 			}
 			else
+			{
 				_putchar(',');
+			}
 		}
 	}
 }
