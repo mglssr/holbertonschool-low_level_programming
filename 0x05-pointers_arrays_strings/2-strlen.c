@@ -1,11 +1,13 @@
 #include <string.h>
 #include "main.h"
-/*
-* int _strlen - función que devuelve el largo de una string
+/**
+* _strlen - función que devuelve el largo de una string
 * @s: puntero s
-* 
+* Return: (0)
 */
 int _strlen(char *s)
 {
-	_putchar('*s = %zu', strlen(*s));
+	size_t strlen(const char *s);
+	return (strlen(s));
 }
+
