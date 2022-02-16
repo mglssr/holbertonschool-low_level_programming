@@ -14,11 +14,12 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		j++;
 	}
-	for (i; i < n && src[i] != '\0'; i++, j++)
+	for (i = 0; i < n && src[i] != '\0'; i++, j++)
 	{
 	dest[j] = src[i];
 	}
 	return (dest);
+}
 /**
 * mientras i vaya recorriendo el array dest se
 * le suma 1 de forma simultanea a j,
