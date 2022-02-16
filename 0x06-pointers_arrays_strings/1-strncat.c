@@ -20,13 +20,3 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	return (dest);
 }
-/**
-* mientras i vaya recorriendo el array dest se
-* le suma 1 de forma simultanea a j,
-* para el i que recorre el array, mientras este
-* no sea mayor o igual al numero de bytes que tiene
-* src y el recorrido de i por el array src sea distinto
-* del NULL, sumale tanto a i como a j 1:
-* por ultimo asignamos el array dest que recorre j al array
-* src que es recorrido por i y devolvemos el DESTino
-*/
