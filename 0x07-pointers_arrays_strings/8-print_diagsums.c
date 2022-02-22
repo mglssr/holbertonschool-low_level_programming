@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*print_diagsums - traza de una matriz 
-*@a: dtring
+*print_diagsums - traza de una matriz
+*@a: string
 *@size: tamaño de la matriz
 **/
 void print_diagsums(int *a, int size)
