@@ -9,15 +9,17 @@
 int aux_primo(int n, int x)
 {
 	if (n <= 1)
+	{
 		return (0);
-	else 
+	}
+	else
 		{
-		if (n % x == 0 && x != 1 && x != n )
+		if (n % x == 0 && x != 1 && x != n)
 			return (0);
-		
+
 		else if (x == n)
 			return (1);
-		
+
 		}
 		return (aux_primo(n, x + 1));
 	return (0);
