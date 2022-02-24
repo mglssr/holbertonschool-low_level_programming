@@ -1,4 +1,5 @@
--Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 6-is_prime_number.c -o 6-primeinclude "main.h"
+#include "main.h"
+
 /**
 * aux_primo - funcion auxiliar
 * @n: n a evaluar si es primo
@@ -19,7 +20,7 @@ int aux_primo(int n, int x)
 		
 		}
 		return (aux_primo(n, x + 1));
-	return (0);;
+	return (0);
 }
 
 /**
