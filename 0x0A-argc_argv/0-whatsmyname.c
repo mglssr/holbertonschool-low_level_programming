@@ -2,6 +2,8 @@
 
 /**
 * main - aisua
+*@argc: conteo de argumentos
+*@argv: array que contiene punteros que apuntan a los argumentos
 * Return: soq
 */
 
