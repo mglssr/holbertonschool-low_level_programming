@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
 *main - wodu
-*return: idk
+*@argc: conteo de argumentos
+*@argv: asdiuwq
+*Return: idk
 *
 */
 int  main(int argc, char *argv[] __attribute__((unused)))
