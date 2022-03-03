@@ -33,10 +33,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (id1 = 0; s1[id1]; id1++)
 		result[id1] = s1[id1];
-	
+
 	for (id2 = 0; id2 < n && s2[id2]; id2++)
 		result[id1 + id2] = s2[id2];
-	
+
 	result[id1 + id2] = '\0';
-	return(result);
+	return (result);
 }
