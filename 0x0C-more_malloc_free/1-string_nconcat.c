@@ -2,7 +2,7 @@
 #include "main.h"
 #include <string.h>
 /**
-*strlen - returns lenght
+*_strlen - returns lenght
 * @str: pointer
 * Return: i
 */
