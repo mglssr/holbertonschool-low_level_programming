@@ -28,18 +28,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *result;
 	unsigned int id1, id2;
-	
-	if(s1 == NULL)
+
+	if (s1 == NULL)
 		s1 = "";
-	if(s2 == NULL)
+	if (s2 == NULL)
 		s2 = "";
 
 	result = malloc(strlen(s1) + n * sizeof(*result));
 
 	if (!result)
 		return (NULL);
-	else
-	{
+
 	for (id1 = 0; s1[id1]; id1++)
 		result[id1] = s1[id1];
 
@@ -47,6 +46,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		result[id1 + id2] = s2[id2];
 
 	result[id1 + id2] = '\0';
-	}
+
 	return (result);
 }
