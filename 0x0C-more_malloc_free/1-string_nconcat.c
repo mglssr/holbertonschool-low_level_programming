@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
 /**
 *_strlen - returns lenght
 * @str: pointer
@@ -42,9 +43,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (id1 = 0; s1[id1]; id1++)
 		result[id1] = s1[id1];
+		
+	printf("coping uwu %d", s1[id1]);
 
 	for (id2 = 0; id2 < n && s2[id2]; id2++)
 		result[id1 + id2] = s2[id2];
+		
+	printf("coping uwu %d", s2[id2]);
 
 	result[id1 + id2] = '\0';
 
