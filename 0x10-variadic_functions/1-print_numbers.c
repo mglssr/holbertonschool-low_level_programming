@@ -1,5 +1,5 @@
 #include "variadic_functions.h"
-
+#include <stdio.h>
 /**
 * print_numbers - funcion que printea numeros
 * @separator: string to be printed between numbers
@@ -9,9 +9,21 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int i;
+	unsigned int i;
 	va_list ln;
 
 	va_start(ln, n);
+	
+	for (i = 0; i < n;)
+	{
+		printf("%d", va_arg(ln, int));
+		i++;
+		if (separator != NULL && i < n)
+		{
+			printf("%s",separator);
+		}
+	}
+	printf("\n");
+}
 
 
