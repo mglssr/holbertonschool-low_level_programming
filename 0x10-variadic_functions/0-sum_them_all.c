@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 
 /**
-* int sum_them_all - funcion que retorna la suma todos los parámetros
+* sum_them_all - funcion que retorna la suma todos los parámetros
 * @n: cantidad de parametros
 * Return: algo xd
 */
