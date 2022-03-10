@@ -1,5 +1,6 @@
 #include "variadic_functions.h"
 #include <stdio.h>
+
 /**
 * print_strings - funcion que printea una string
 * @separator: sjid
@@ -19,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		string = va_arg(ln, char *);
 		if (!string)
-			printf("nil");
+			printf("(nil)");
 		else
 			printf("%s", string);
 		i++;
