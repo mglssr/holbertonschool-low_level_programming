@@ -1,7 +1,49 @@
 #include "variadic_functions.h"
 #include <stdio.h>
-#include <stdarg.h>
 #include <stdlib.h>
+#include <stdarg.h>
+
+/**
+* print_all - function that prints anything
+* @format: o.o
+*/
+
+void print_all(const char * const format, ...)
+{
+	va_list args;
+	int x, y;
+	char *separator = "";
+
+	p_rry type[] = {
+			{'c', print_char},
+			{'i', print_int},
+			{'f', print_float},
+			{'s', print_string},
+			{'\0', NULL}
+	};
+
+	va_start(args, format);
+
+	x = 0;
+	while (format != NULL && format[x] != '\0')
+	{
+		y = 0;
+		while (type[y].ty != '\0')
+		{
+			if (type[y].ty == format[x])
+			{
+				printf("%s", separator);
+				type[y].f(args);
+				separator = ", ";
+			}
+			y++;
+		}
+		x++;
+	}
+	va_end(args);
+
+	printf("\n");
+}
 
 /**
 * print_char - printea una variable tipo char
@@ -48,46 +90,4 @@ void print_string(va_list s)
 	}
 	else
 		printf("%s", string);
-}
-
-/**
-* print_all - function that prints anything
-* @format: o.o
-*/
-
-void print_all(const char * const format, ...)
-{
-	va_list args;
-	int x, y;
-	char *separator = "";
-
-	p_rry type[] = {
-			{'c', print_char},
-			{'i', print_int},
-			{'f', print_float},
-			{'s', print_string},
-			{'\0', NULL}
-	};
-
-	va_start(args, format);
-
-	x = 0;
-	while (format != NULL && format[x] != '\0')
-	{
-		y = 0;
-		while (type[y].ty != '\0')
-		{
-			if (type[y].ty == format[x])
-			{
-				printf("%s", separator);
-				type[y].f(args);
-				separator = ", ";
-			}
-			y++;
-		}
-		x++;
-	}
-	va_end(args);
-
-	printf("\n");
 }
