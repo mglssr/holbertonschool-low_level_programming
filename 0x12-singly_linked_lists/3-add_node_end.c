@@ -13,7 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
 	list_t *aux;
-	
+
 	if (!str)
 		return (NULL);
 
@@ -21,21 +21,23 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (!new)
 		return (NULL);
-	
+
 	(*new).str = strdup(str);
 	(*new).len = strlen(str);
 	(*new).next = NULL;
 
-	if (*head != NULL)
+	if (*head == NULL)
+
+		*head = new;
+	else
 	{
-		while ((*aux).next != NULL && new->next != NULL)
+		aux = *head;
+
+		while ((*aux).next)
 		{
 			aux = aux->next;
 			aux->next = new;
 		}
 	}
-	else
-		*head = new;
-		
 return (new);
 }
