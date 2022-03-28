@@ -35,10 +35,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	wr = write(STDIN_FILENO, buff, count);
 
-	close(fd);
-
 	if (wr != count && wr == -1)
 		return (0);
 
-return (wr);
+	close(fd);
+
+	return (wr);
 }
