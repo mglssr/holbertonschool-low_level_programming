@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 #include <fcntl.h>
-
+#include <stdlib.h>
 /**
 * read_textfile - function that reads a text file and prints it to the stout
 * @filename: archivo a leer
