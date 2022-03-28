@@ -14,6 +14,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int fd;
 	char buff[1024];
 	int count;
+	int wr;
+
+	if (filename == NULL)
+		return (0);
 
 	fd = open(filename, O_RDONLY);
 
@@ -25,10 +29,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (count == -1)
 		return (0);
 
-	write(STDIN_FILENO, buff, count);
+	wr = write(STDIN_FILENO, buff, count);
 
-	if ((write(STDIN_FILENO, buff, count)) == -1)
+	if (wr != count)
 		return (0);
 
-return (count);
+return (wr);
 }
