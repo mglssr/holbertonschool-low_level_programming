@@ -13,13 +13,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
 	char buff[1024];
-	ssize_t count;
+	int count;
 
-	fd = open(filename,O_RDONLY);
+	fd = open(filename, O_RDONLY);
 
 	if (fd == -1)
 		return (0);
-	
+
 	count = read(fd, buff, letters);
 
 	if (count == -1)
