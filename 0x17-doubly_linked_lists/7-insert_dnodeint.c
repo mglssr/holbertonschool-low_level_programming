@@ -29,7 +29,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		return (*h);
 	}
 
-	while (idx > 1)
+	while (idx > 0)
 	{
 		actual = (*actual).next;
 		idx--;
