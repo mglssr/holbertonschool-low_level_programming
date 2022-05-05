@@ -28,7 +28,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		*h = new;
 		return (*h);
 	}
-
 	while (idx > 0)
 	{
 		actual = (*actual).next;
@@ -39,8 +38,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			free(new);
 			return (NULL);
 		}
-	}
-	
+
+		if((*actual).next == NULL)
+		{
+			free(new);
+			return(NULL);
+		}
+	} 
+
 	if ((*actual).next == NULL)
 		(*new).next = NULL;
 	else
