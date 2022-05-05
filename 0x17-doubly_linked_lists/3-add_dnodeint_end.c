@@ -34,7 +34,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 			aux = (*aux).next;
 		}
 		(*aux).next = new;
+		(*new).prev = aux;
 	}
-	(*new).prev = aux;
-return(new);
+	return(new);
 }
