@@ -1,11 +1,12 @@
 CC= gcc -Wall -Werror -Wextra -pedantic
 SRC= main.c school.c
 NAME= school
+OBJ= $(SRC:.c=.o)
 
-.PHONY: all
+.PHONY: all clean oclean fclean re
 
-all: $(SRC)
-	$(CC) $(SRC)-o $(NAME)
+all: $(OBJ) $(SRC) 
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
 	RM *~ $(NAME)
