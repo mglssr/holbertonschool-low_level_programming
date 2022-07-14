@@ -1,10 +1,5 @@
 CC= gcc -Wall -pedantic
 SRC= main.c school.c
 
-all: school holberton clean
-
-school: school.c main.c
+all: $(SRC)
 	$(CC) $(SRC) -o school
-
-holberton: school.c main.c
-	$(CC) $(SRC) -o holberton
