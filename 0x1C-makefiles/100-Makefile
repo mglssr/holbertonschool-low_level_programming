@@ -2,6 +2,7 @@ CC= gcc -Wall -Werror -Wextra -pedantic
 SRC= main.c school.c
 NAME= school
 OBJ= $(SRC:.c=.o)
+CFLAGS= -Wall -Werror -Wextra -pedantic
 
 .PHONY: all clean oclean fclean re
 
