@@ -1,1 +1,1 @@
-En primera instancia trabajaremos con C
+C is fun(?
