@@ -3,5 +3,4 @@
 #include <stdio.h>
 
 int linear_search(int *array, size_t size, int value);
-typedef int make_iso_compilers_happy;
 #endif
